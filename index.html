@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaac Rocha | Full Stack</title>
+    
+    <!-- Fonte Premium -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Ícones -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Luz de Fundo (Ambient Glow) -->
+    <div class="ambient-light"></div>
+
+    <div class="container">
+        
+        <!-- HEADER -->
+        <header>
+            <div class="profile-container">
+                <div class="status-indicator"></div> <!-- Bolinha piscando "Online" -->
+                <img src="foto isaac4.jpeg" alt="Isaac Rocha" class="profile-pic">
+            </div>
+            
+            <div class="header-text">
+                <h1>Isaac Rocha</h1>
+                <p class="role">Full-Stack Developer</p>
+                <p class="bio">Criando experiências digitais de alta performance e escaláveis.</p>
+            </div>
+        </header>
+
+        <!-- GRID DE LINKS (ESTILO BENTO) -->
+        <main class="bento-grid">
+            
+            <!-- Item 1: Principal (Largo) -->
+            <a href="https://wa.me/5586995443162?text=Olá%20fiquei%20interessado%20,%20gostaria%20de%20fazer%20um%20orçamento%20!" target="_blank" class="card main-cta">
+                <div class="card-content">
+                    <span class="tag">Disponível para projetos</span>
+                    <h3>Vamos trabalhar juntos?</h3>
+                    <p>Solicite um orçamento ou consultoria.</p>
+                </div>
+                <div class="card-icon">
+                    <i class="ph-fill ph-arrow-right"></i>
+                </div>
+            </a>
+
+            <!-- Item 2: Portfólio -->
+            <a href="https://isacsampa.github.io/Portiflio-isac.dev/" target="_blank" class="card">
+                <div class="icon-top"><i class="ph-duotone ph-laptop"></i></div>
+                <h3>Portfólio</h3>
+                <p class="small-desc">Meus cases</p>
+            </a>
+
+            <!-- Item 3: CV -->
+            <a href="Currículo isaac rocha samapaio (1).pdf" download class="card">
+                <div class="icon-top"><i class="ph-duotone ph-file-pdf"></i></div>
+                <h3>Currículo</h3>
+                <p class="small-desc">Baixar PDF</p>
+            </a>
+
+            <!-- Item 4: GitHub (Largo) -->
+            <a href="https://github.com/isacsampa" target="_blank" class="card wide-card">
+                <div class="row-content">
+                    <i class="ph-fill ph-github-logo big-icon"></i>
+                    <div>
+                        <h3>GitHub</h3>
+                        <p class="small-desc">Explore meu código fonte</p>
+                    </div>
+                </div>
+                <i class="ph-bold ph-arrow-up-right external-icon"></i>
+            </a>
+
+            <!-- Item 5: LinkedIn -->
+            <a href="https://www.linkedin.com/in/isac-sampaio-4973a8210/" target="_blank" class="card wide-card">
+                <div class="row-content">
+                    <i class="ph-fill ph-linkedin-logo big-icon"></i>
+                    <div>
+                        <h3>LinkedIn</h3>
+                        <p class="small-desc">Conexões profissionais</p>
+                    </div>
+                </div>
+                <i class="ph-bold ph-arrow-up-right external-icon"></i>
+            </a>
+
+            <!-- Item 6: Email (Copiável) -->
+            <div class="card wide-card copy-email" onclick="copyEmail()">
+                <div class="row-content">
+                    <i class="ph-fill ph-envelope-simple big-icon"></i>
+                    <div>
+                        <h3>E-mail</h3>
+                        <p class="small-desc" id="email-text">isacsampa4@gmail.com</p>
+                    </div>
+                </div>
+                <i class="ph-bold ph-copy external-icon"></i>
+            </div>
+
+        </main>
+
+        <footer>
+            <p>© 2025 Isac Rocha. Feito por Isac.Dev</p>
+        </footer>
+
+    </div>
+
+    <!-- Notificação -->
+    <div id="toast">Copiado!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
